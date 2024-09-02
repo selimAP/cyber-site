@@ -136,3 +136,142 @@ body{
     background-color: var(--h1font);
     border-radius: 20px;
 }
+
+.color-palette{
+    width: 100%;
+}
+
+.color-palette h3{
+    display: flex;
+    justify-content: center;
+    color: var(--font);
+}
+
+.color-palette ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(10, minmax(50px, 50px));
+    list-style: none;
+    margin-top: 10px;
+}
+
+.color-palette li{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 1201px){
+    .color-palette ul{
+        grid-template-columns: repeat(6, minmax(50px, 50px));
+    }
+}
+
+.color-palette-1{
+    background: #0e0a2c;
+}
+.color-palette-2{
+    background: #ffffff;
+}
+.color-palette-3{
+    background: #18163b;
+}
+.color-palette-4{
+    background: #B026FF;
+}
+.color-palette-5{
+    background: #0a0720;
+}
+.color-palette-6{
+    background: #120d3a;
+}
+.color-palette-7{
+    background: #0b0725;
+}
+.color-palette-8{
+    background: #07f2f1;
+}
+.color-palette-9{
+    background: #8a8a8a7e;
+}
+.color-palette-10{
+    background: #797bff;
+}
+.color-palette-11{
+    background: #FF5370;
+}
+.color-palette-12{
+    background: #D968FF;
+}
+.color-palette-13{
+    background: #FFEB3B;
+}
+.color-palette-14{
+    background: #FF9800;
+}
+.color-palette-15{
+    background: #FF5F1F;
+}
+.color-palette-16{
+    background: #9bdb99;
+}
+.color-palette-17{
+    background: #C3E88D;
+}
+.color-palette-18{
+    background: #C792EA;
+}
+.color-palette-19{
+    background: #CFFF04;
+}
+.color-palette-20{
+    background: #6cb6d3;
+}
+.color-palette-21{
+    background: #deffff;
+}
+.color-palette-22{
+    background: #65737E;
+}
+.color-palette-23{
+    background: #F78C6C;
+}
+.color-palette-24{
+    background: #00000050;
+}
+.color-palette-25{
+    background: #EEFFFF;
+}
+
+abbr {
+    position: relative;
+}
+
+abbr:hover{
+    margin-top: -4px;
+}
+
+abbr[title]::after {
+    content: attr(title);
+    position: absolute;
+    background: #161042;
+    color: #9e99ff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1000; 
+}
+
+abbr:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
