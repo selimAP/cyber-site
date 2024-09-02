@@ -112,17 +112,6 @@ body{
     cursor: pointer;
 }
 
-@media (max-width: 601px){
-    .vscode-href-box{
-        height: 150px;
-        width: 250px; 
-    }
-    .vscode-href-box img{
-        height: 50px;
-        width: auto;
-    }
-}
-
 
 ::-webkit-scrollbar {
     width: 5.1px; /* Breite der Scrollbar */
@@ -164,11 +153,7 @@ body{
 
 }
 
-@media (max-width: 1201px){
-    .color-palette ul{
-        grid-template-columns: repeat(6, minmax(50px, 50px));
-    }
-}
+
 
 .color-palette-1{
     background: #0e0a2c;
@@ -274,4 +259,18 @@ abbr[title]::after {
 abbr:hover::after {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width: 601px){
+    .vscode-href-box{
+        height: 150px;
+        width: 250px; 
+    }
+    .vscode-href-box img{
+        height: 50px;
+        width: auto;
+    }
+    .color-palette ul{
+        grid-template-columns: repeat(4, minmax(50px, 50px));
+    }
 }
